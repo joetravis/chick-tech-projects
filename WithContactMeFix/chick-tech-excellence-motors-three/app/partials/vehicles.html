@@ -1,0 +1,48 @@
+<div class="art-layout-wrapper">
+    <div class="art-content-layout">
+        <div class="art-content-layout-row">
+            <div class="art-layout-cell art-content">
+                <article class="art-post art-article">
+                    <h2 class="art-postheader">Vehicles</h2><br>
+                    <div class="art-postcontent art-postcontent-0 clearfix">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder=" Search" ng-model="search.Make"/>
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="infinite" infinite-scroll="loadDetails()">
+                                    <div class="col-lg-4" ng-repeat="widget in widgets | filter:search ">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading text-center">
+                                                <i class="fa fa-cog"></i>
+                                                <b>{{widget.Make}}</b> <b>{{widget.Model}}</b> <b>{{widget.Year}}</b>
+                                            </div>
+                                            <div class="panel-body text-center">
+                                                <img src="{{widget.ImageUrl}}" ><br/>
+                                            </div>
+                                            <!--div class="panel-footer">
+                                                <button class="btn btn-primary center-block" ng-click="getWidget(widget)">Get Widget</button>
+                                            </div-->
+                                            <div class="panel-heading text-center">
+                                                <b>{{widget.MSRP | currency:"$":0}}</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>

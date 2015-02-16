@@ -1,0 +1,44 @@
+<div class="art-layout-wrapper">
+    <div class="art-content-layout">
+        <div class="art-content-layout-row">
+            <div class="art-layout-cell art-content">
+                <article class="art-post art-article">
+                    <h2 class="art-postheader">Contact Me </h2><br>
+                    <div class="art-layout-cell layout-item-1" style="width: 25%" >
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-6" style="width: 15%">
+                                <img width="125" height="125" alt="" src="app/img/top4.png" class="">
+                            </div>
+                            <div class="col-lg-6" style="width: 85%;">
+                                <h3>Please provide us with the information below and choose submtit.</h3>
+                                <form name="widgetBuilderForm" role="form" ng-submit="contactMe(contactinfo)">
+                                    <div class="panel-body" style="width: 74%">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label>First Name</label>
+                                                <input name="total" ng-model="contactinfo.FirstName" class="form-control" ng-required>
+                                                <label>Last Name</label>
+                                                <input name="total" ng-model="contactinfo.LastName" class="form-control" ng-required>
+                                                <label>Email</label>
+                                                <input name="total" ng-model="contactinfo.Email" class="form-control" ng-required>
+                                                <label>Phone Number</label>
+                                                <input name="total" ng-model="contactinfo.Phone" class="form-control" ng-required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pull-right">
+                                                <button type="submit" class="btn btn-primary ">Submit</button>
+                                                <button type="reset" class="btn btn-default">Reset</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="example-chat l-demo-container">
+    <header>Excellence Motors Chat</header>
+
+    <div class='example-chat-toolbar'>
+        <label for="nameInput">Username:</label>
+        <input ng-keyup="usernameFieldKeyPress()" type='text' id='nameInput' placeholder='enter a username and then your message...' ng-model="username">
+    </div>
+
+    <ul id='example-messages' class="example-chat-messages" ng-model="msglist"></ul>
+
+    <footer>
+        <input class="form-control" ng-disabled="userNameNotPresent" type='text' id='messageInput' ng-keypress="messageFieldKeyPress($event)"  placeholder='Type a message...' ng-model="message">
+    </footer>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-warning" ng-click="close()">Close</button>
+</div>

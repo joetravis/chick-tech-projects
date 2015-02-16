@@ -1,0 +1,26 @@
+{
+  "name": "chick-tech",
+  "version": "0.0.0",
+  "homepage": "https://github.com/joetravis/chick-tech",
+  "authors": [
+    "travisj <joe.travis@cdk.com>"
+  ],
+  "font-awesome": "~4.2.0",
+  "description": "ChickTech Seed Project",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.28",
+    "bootstrap": "~3.3.2",
+    "angular-bootstrap": "~0.12.0",
+    "angularfire": "~0.9.2",
+    "angular-route": "~1.2.28",
+    "angular-resource": "~1.2.28"
+  }
+}

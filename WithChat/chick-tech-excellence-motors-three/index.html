@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"  ng-app="myApp">
+<head><!-- Created by Artisteer v4.3.0.60745 -->
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+  <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+  <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" href="app/css/style.css" media="screen">
+  <!--[if lte IE 7]><link rel="stylesheet" href="app/css/style.ie7.css" media="screen" /><![endif]-->
+  <link rel="stylesheet" href="app/css/style.responsive.css" media="all">
+  <link rel="stylesheet" href="app/css/app.css"/>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+  <script src="bower_components/angular/angular.js"></script>
+
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+
+  <script src="app/js/jquery.js"></script>
+  <script src="app/js/script.js"></script>
+  <script src="app/js/script.responsive.js"></script>
+
+
+  <style>.art-content .art-postcontent-0 .layout-item-0 { padding-top: 20px;padding-right: 20px;padding-bottom: 0px;padding-left: 20px;  }
+  .art-content .art-postcontent-0 .layout-item-1 { padding: 20px;  }
+  .ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+  .ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+  </style>
+</head>
+<body>
+<div id="art-main">
+  <header class="art-header">
+
+    <div class="art-shapes">
+      <div class="art-object1"></div>
+
+    </div>
+
+    <h1 class="art-headline">
+      <a href="/">Enter Site Title</a>
+    </h1>
+    <h2 class="art-slogan">Excellence Motors</h2>
+
+
+
+
+
+    <nav class="art-nav">
+      <ul class="art-hmenu">
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/contactus">Contact Us</a></li>
+        <li><a href="#/vehicles">Vehicles</a></li>
+        <li><a  style="margin-right: 100px" href="#/contactme">Contact Me</a></li>
+      </ul>
+    </nav>
+
+
+  </header>
+  <div class="art-layout-cell layout-item-1" style="width: 1%" ng-controller="ChatCtrl" >
+    <p style="text-align:right;"><a class="art-button" ng-click="chat()">Chat</a></p>
+  </div>
+  <div class="art-sheet clearfix">
+    <div class="art-layout-wrapper">
+      <div class="art-content-layout">
+        <div class="art-content-layout-row">
+          <div class="art-layout-cell art-content"><article class="art-post art-article">
+
+
+            <div ng-view></div>
+
+
+
+          </article></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="art-footer">
+      <div class="art-footer-inner">
+        <div class="art-content-layout">
+          <div class="art-content-layout-row">
+            <div class="art-layout-cell layout-item-0" style="width: 25%">
+              <p style="font: 22px 'Century Gothic'; color: #808080">information</p>
+              <br>
+              <ul>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Management</a></li>
+              </ul>
+            </div><div class="art-layout-cell layout-item-0" style="width: 25%">
+            <p style="font: 22px 'Century Gothic'; color: #808080">directions</p>
+            <br>
+            <ul>
+              <li><a href="#">Map</a></li>
+              <li><a href="#">Address</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div><div class="art-layout-cell layout-item-0" style="width: 17%">
+            <p style="font: 22px 'Century Gothic'; color: #808080">company</p>
+            <br>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div><div class="art-layout-cell layout-item-0" style="width: 33%">
+            <p><br></p>
+            <p style="font: 22px 'Century Gothic'; text-align: right; color: #E1482D;">1.555.456.7984</p>
+            <br>
+            <p style="text-align:right;">Copyright © 2011-2012.<br>
+              All Rights Reserved.</p>
+          </div>
+          </div>
+        </div>
+
+        <p class="art-page-footer">
+          <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
+<script src="app/js/app.js"></script>
+<script src="app/js/services.js"></script>
+<script src="app/js/controllers.js"></script>
+<script src="app/js/filters.js"></script>
+<script src="app/js/directives.js"></script>
+</body>
+</html>
